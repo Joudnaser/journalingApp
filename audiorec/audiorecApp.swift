@@ -11,7 +11,7 @@ import SwiftUI
 struct audiorecApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VentingPage()
         }
     }
 }

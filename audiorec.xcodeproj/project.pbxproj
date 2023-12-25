@@ -14,6 +14,13 @@
 		EF169FF62B375C3E00E68349 /* audiorecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF169FF52B375C3E00E68349 /* audiorecTests.swift */; };
 		EF16A0002B375C3E00E68349 /* audiorecUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF169FFF2B375C3E00E68349 /* audiorecUITests.swift */; };
 		EF16A0022B375C3E00E68349 /* audiorecUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0012B375C3E00E68349 /* audiorecUITestsLaunchTests.swift */; };
+		EF16A00F2B3862B300E68349 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A00E2B3862B300E68349 /* VoiceViewModel.swift */; };
+		EF16A0112B3862F400E68349 /* RecordingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0102B3862F400E68349 /* RecordingListView.swift */; };
+		EF16A0132B38633C00E68349 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0122B38633C00E68349 /* Recording.swift */; };
+		EF16A0152B38639600E68349 /* date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0142B38639600E68349 /* date.swift */; };
+		EF16A0172B3863E500E68349 /* timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0162B3863E500E68349 /* timer.swift */; };
+		EF16A0502B38709700E68349 /* write.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A04F2B38709700E68349 /* write.swift */; };
+		EF16A0522B3870E000E68349 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16A0512B3870E000E68349 /* Notes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		EF169FFB2B375C3E00E68349 /* audiorecUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audiorecUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF169FFF2B375C3E00E68349 /* audiorecUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audiorecUITests.swift; sourceTree = "<group>"; };
 		EF16A0012B375C3E00E68349 /* audiorecUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audiorecUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EF16A00E2B3862B300E68349 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
+		EF16A0102B3862F400E68349 /* RecordingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingListView.swift; sourceTree = "<group>"; };
+		EF16A0122B38633C00E68349 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		EF16A0142B38639600E68349 /* date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = date.swift; sourceTree = "<group>"; };
+		EF16A0162B3863E500E68349 /* timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timer.swift; sourceTree = "<group>"; };
+		EF16A04F2B38709700E68349 /* write.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = write.swift; sourceTree = "<group>"; };
+		EF16A0512B3870E000E68349 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				EF169FE32B375C3D00E68349 /* audiorecApp.swift */,
+				EF16A00E2B3862B300E68349 /* VoiceViewModel.swift */,
+				EF16A0102B3862F400E68349 /* RecordingListView.swift */,
+				EF16A0122B38633C00E68349 /* Recording.swift */,
+				EF16A0142B38639600E68349 /* date.swift */,
+				EF16A0162B3863E500E68349 /* timer.swift */,
 				EF169FE52B375C3D00E68349 /* ContentView.swift */,
+				EF16A04F2B38709700E68349 /* write.swift */,
+				EF16A0512B3870E000E68349 /* Notes.swift */,
 				EF169FE72B375C3E00E68349 /* Assets.xcassets */,
 				EF169FE92B375C3E00E68349 /* audiorec.entitlements */,
 				EF169FEA2B375C3E00E68349 /* Preview Content */,
@@ -215,6 +236,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = EF169FD72B375C3D00E68349;
 			productRefGroup = EF169FE12B375C3D00E68349 /* Products */;
@@ -259,8 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF16A00F2B3862B300E68349 /* VoiceViewModel.swift in Sources */,
+				EF16A0502B38709700E68349 /* write.swift in Sources */,
+				EF16A0152B38639600E68349 /* date.swift in Sources */,
 				EF169FE62B375C3D00E68349 /* ContentView.swift in Sources */,
+				EF16A0112B3862F400E68349 /* RecordingListView.swift in Sources */,
+				EF16A0522B3870E000E68349 /* Notes.swift in Sources */,
 				EF169FE42B375C3D00E68349 /* audiorecApp.swift in Sources */,
+				EF16A0172B3863E500E68349 /* timer.swift in Sources */,
+				EF16A0132B38633C00E68349 /* Recording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

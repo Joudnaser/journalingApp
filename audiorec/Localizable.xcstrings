@@ -1,0 +1,68 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%@" : {
+
+    },
+    "and Stop when its done" : {
+
+    },
+    "Family" : {
+
+    },
+    "Feelings" : {
+
+    },
+    "Friends" : {
+
+    },
+    "How are you  feeling?" : {
+
+    },
+    "Press the Recording Button below" : {
+
+    },
+    "Rec" : {
+
+    },
+    "RelationShip" : {
+
+    },
+    "School" : {
+
+    },
+    "submit" : {
+
+    },
+    "text1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كيف حالك"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "how are  you feeling"
+          }
+        }
+      }
+    },
+    "Type here.." : {
+
+    },
+    "What Happened?" : {
+
+    },
+    "What was the reason ?" : {
+
+    },
+    "Work" : {
+
+    }
+  },
+  "version" : "1.0"
+}

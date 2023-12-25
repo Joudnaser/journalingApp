@@ -17,10 +17,28 @@ import SwiftUI
 struct recordingListView: View {
     
     @ObservedObject var vm = VoiceViewModel()
-    
+    let text: String
+    let title1 :String
+    @State private var items:[NoteItem] = []
+    @State var taskText: String = ""
+    @State var feeling: String = ""
     var body: some View {
         NavigationView {
             VStack {
+    
+                VStack(){
+//                    Image("joy2")
+//                        .offset(x:2,y:1)
+                    Text(title1)
+                    Text(text)
+                      
+                } .padding(.trailing,235)
+                
+                    .frame(width: 370, height: 85)
+                    .background(Color.gray)
+                    .cornerRadius(30)
+                    .shadow(color: Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 10)
+            
                 ScrollView(showsIndicators: false){
                     ForEach(vm.recordingsList, id: \.createdAt) { recording in
                         VStack{
@@ -57,21 +75,32 @@ struct recordingListView: View {
                                 
                             }.padding()
                         }.padding(.horizontal,10)
-                        .frame(width: 370, height: 85)
-                        .background(Color.gray)
-                        .cornerRadius(30)
-                        .shadow(color: Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 10)
+                            .frame(width: 370, height: 85)
+                            .background(Color.gray)
+                            .cornerRadius(30)
+                            .shadow(color: Color(#colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)).opacity(0.3), radius: 10, x: 0, y: 10)
                     }
                 }
                 
             }.padding(.top,30)
-            .navigationBarTitle("Feelings")
+                .navigationBarTitle("Feelings")
         }
     }
+    //    func didTapAddTask(text: String) {
+    //        let id = items.reduce(0) { max($0, $1.id) } + 1
+    //        items.insert(NoteItem(id: id,note:feeling) , at: 0)
+    //        taskText = ""
+    //
+    //    }
+    //    }
+    
+    //let id: Int
+    //let emotion : String
+    //let title : String
+    //let note : String }
 }
-
 struct recordingListView_Previews: PreviewProvider {
     static var previews: some View {
-        recordingListView()
+        recordingListView(text: "",title1: "")
     }
 }

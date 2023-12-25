@@ -12,6 +12,8 @@ struct VentingPage: View {
     @State private var isClicked = false
     @State private var selectedButton: Int = 0
     @State private var note = ""
+    @State private var title = ""
+
     @ObservedObject var vm = VoiceViewModel()
     
     @State private var showingList = false
@@ -20,6 +22,7 @@ struct VentingPage: View {
     var body: some View {
         GeometryReader { geo in
             NavigationView {
+                
                 VStack (spacing: 10){
                     
                     Text("How are you  feeling?")
@@ -227,8 +230,14 @@ struct VentingPage: View {
                         .multilineTextAlignment(.leading)
                         .frame(width: 300, height: 60)
                     
+                    TextField("title",text: $title)
+                        .frame(width: 360, height:50)
+                        .background(Color("Color"))
+                        
+                    
+                        .multilineTextAlignment(.leading)
                     TextField("Type here..", text: $note)
-                        .padding(.leading)
+                        .padding()
                         .cornerRadius(0)
                         .frame(width: 360, height: 200)
                         .cornerRadius(10)
@@ -258,19 +267,18 @@ struct VentingPage: View {
                     //submit action
                     Button(action: {
                         if vm.isRecording == true {
-                            vm.stopRecording()
-                        }
-                        vm.fetchAllRecording()
-                        showingList.toggle()
-                    })
-                    {
-                        Text("submit" )
-                            .foregroundColor(.black)
-                            .font(.system(size: 20, weight: .bold))
-                            .sheet(isPresented:$showingList, content: {
-                                recordingListView()
-                            })
-                    }//end
+                                vm.stopRecording()
+                                         }
+                                         vm.fetchAllRecording()
+                                         showingList.toggle()
+                                     }) {
+                                         Text("add")
+                                             .foregroundColor(.black)
+                                             .font(.system(size: 20, weight: .bold))
+                                     }
+                                     .sheet(isPresented: $showingList, content: {
+                                         recordingListView(text: note,title1: title)
+                                     })//end
                     
                     
                 }
